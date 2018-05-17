@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Juggling licence
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Get your juggle on!!
+        <span class="heading-secondary">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        I have altered this page to juggle
+      </p>
+
+
+			<ul class="list list-bullet">
+				<li><a href="/start-page">Roll up get your juggling licence here</a></li>
+			</ul>
+
+      <h2 class="heading-medium">Other resources</h2>
+
+			<ul class="list list-bullet">
+				<li>
+					<a href="https://govuk-elements.herokuapp.com/snippets/">
+						Guide to GOV.UK Elements
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/service-manual">
+						Service design manual
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gov.uk/design-principles">
+						Government Digital Service Design Principles
+					</a>
+				</li>
+			</ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
